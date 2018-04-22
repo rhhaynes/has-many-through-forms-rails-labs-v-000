@@ -1,7 +1,9 @@
 <h1><%= @post.title %></h1>
 <h2><%= @post.content %></h2>
 
-<h3>Categories: <%= @post.categories.collect{|cat| cat.name}.join(", ") %></h3>
+<div>
+  <h3>Categories: <%= @post.categories.collect{|cat| cat.name}.join(", ") %></h3>
+</div>
 
 <div>
   <h3><%= "Comments" if !@post.comments.empty? %></h3>
